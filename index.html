@@ -15,30 +15,43 @@
                 height: 100vh;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                justify-content: space-evenly;
                 align-items: center;
-                row-gap: var(--size-normal);
             }
-            .app__heading {
+            .app__header__heading {
                 font-size: var(--font-big);
-                padding-bottom: var(--size-normal);
-                border-bottom: 1px solid var(--color-medium);
             }
-            .app__nav__item__link {
+            .app__main__nav {
+                display: flex;
+                flex-direction: column;
+                row-gap: var(--size-smaller);
+            }
+            .app__main__nav__item__link {
                 border-bottom: 1px dotted var(--color-lighter);
             }
-            .app__nav__item__link:hover {
+            .app__main__nav__item__link:hover {
                 border-style: solid;
             }
         </style>
     </head>
     <body class="app">
-        <h1 class="app__heading">Home @ KaKi87</h1>
-        <ul class="app__nav">
-            <li class="app__nav__item"><a
-                class="app__nav__item__link"
-                href="https://status.home.kaki87.net"
-            >Status</a></li>
-        </ul>
+        <header class="app__header">
+            <h1 class="app__header__heading">Home @ KaKi87</h1>
+        </header>
+        <main class="app__main">
+            <ul class="app__main__nav">
+                <li class="app__main__nav__item"><a
+                    class="app__main__nav__item__link"
+                    href="https://status.home.kaki87.net"
+                >Status</a></li>
+                <li class="app__main__nav__item"><a
+                    class="app__main__nav__item__link"
+                    href="https://mon.home.kaki87.net"
+                >Netdata</a></li>
+            </ul>
+        </main>
+        <footer class="app__footer">
+            <p class="app__footer__text">&copy; 2022 — KaKi87</p>
+        </footer>
     </body>
 </html>
