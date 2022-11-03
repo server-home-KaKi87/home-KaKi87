@@ -17,9 +17,28 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                row-gap: var(--size-normal);
+            }
+            .app__heading {
+                font-size: var(--font-big);
+                padding-bottom: var(--size-normal);
+                border-bottom: 1px solid var(--color-medium);
+            }
+            .app__nav__item__link {
+                border-bottom: 1px dotted var(--color-lighter);
+            }
+            .app__nav__item__link:hover {
+                border-style: solid;
             }
         </style>
     </head>
     <body class="app">
+        <h1 class="app__heading">Home @ KaKi87</h1>
+        <ul class="app__nav">
+            <li class="app__nav__item"><a
+                class="app__nav__item__link"
+                href="https://status.home.kaki87.net"
+            >Status</a></li>
+        </ul>
     </body>
 </html>
